@@ -2,7 +2,7 @@
 
 ## 🌐 Live Demo
 
-[http://127.0.0.1:5501/index.html)](https://michael-yugi.github.io/iyf-s12-week-06-michael-yugi/)]
+[http://127.0.0.1:5501/index.html)](https://michael-yugi.github.io/iyf-s12-week-06-michael-yugi/)
 
 ## 📖 Overview
 
