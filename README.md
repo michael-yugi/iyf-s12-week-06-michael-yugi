@@ -2,11 +2,7 @@
 
 ## 🌐 Live Demo
 
-[View Live Weather Dashboard](http://127.0.0.1:5501/index.html)
-
-> **Note:** The link above is a local development URL and only works on your computer while Live Server is running. Replace it with your GitHub Pages URL after deployment.
-
----
+[http://127.0.0.1:5501/index.html)](https://michael-yugi.github.io/iyf-s12-week-06-michael-yugi/)]
 
 ## 📖 Overview
 
@@ -99,42 +95,6 @@ The application allows users to search for cities and view their current weather
 - **Search History:** Allow users to search again by clicking previously searched cities.
 - **Local Storage:** Preserve recent searches using browser localStorage.
 
-### API Used
-
-**OpenWeatherMap API**
-
-The application retrieves weather information using the OpenWeatherMap Current Weather API.
-
-API endpoint:
-
-```text
-https://api.openweathermap.org/data/2.5/weather
-```
-
-Temperature measurements are returned in Celsius using the metric units parameter.
-
-### API Key Security
-
-The API key is stored separately in `config.js`, which is excluded from Git using `.gitignore`.
-
-A `config.example.js` file is provided as a template.
-
-For deployment, GitHub Actions uses a repository secret named `OPENWEATHER_API_KEY` to generate `config.js` during the deployment process.
-
-This prevents the actual API key from being committed to the Git repository.
-
-## 🗓️ Daily Challenges
-
-The following daily challenges were part of my Week 6 practice:
-
-| Day | Challenge | Concepts Practiced |
-|---|---|---|
-| Day 1 | Delayed Promise | Creating Promises and setTimeout |
-| Day 2 | Promise Chain | Promise chaining and execution timing |
-| Day 3 | Error Handling | Handling API errors and fallback data |
-| Day 4 | Rewrite with Async/Await | Converting callbacks into async/await |
-| Day 5 | Parallel Fetches | Promise.allSettled() and parallel API requests |
-
 ## 🛠️ Technologies Used
 
 - **HTML5** – Structuring the application.
@@ -173,78 +133,6 @@ iyf-s12-week-06-michael-yugi/
     └── workflows/
         └── deploy.yml
 ```
-
-*Note: The structure above represents the expected organization. Adjust it to match the actual files and folders in your repository.*
-
-## 🚀 How to Run the Project Locally
-
-Follow these steps to run the Weather Dashboard on your computer.
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/YOUR-GITHUB-USERNAME/iyf-s12-week-06-YOUR-GITHUB-USERNAME.git
-```
-
-### 2. Open the Project Folder
-
-```bash
-cd iyf-s12-week-06-YOUR-GITHUB-USERNAME
-```
-
-### 3. Configure the API Key
-
-- Sign up for an API key at [OpenWeatherMap](https://openweathermap.org/api).
-- Copy `config.example.js` and rename the copy to `config.js`.
-- Open `config.js` and add your API key.
-
-Example:
-
-```javascript
-const API_KEY = "YOUR_OPENWEATHER_API_KEY";
-```
-
-**Important:** Never commit your actual `config.js` file or expose your API key in Git history.
-
-### 4. Run the Application
-
-Open `index.html` using the VS Code Live Server extension.
-
-Enter a city name in the search field and click Search to retrieve its weather information.
-
-## 🚀 Deployment
-
-The project is deployed using GitHub Pages and GitHub Actions.
-
-The deployment process involves:
-
-1. Adding `OPENWEATHER_API_KEY` under GitHub repository secrets.
-2. Configuring GitHub Pages to use GitHub Actions.
-3. Creating the deployment workflow in `.github/workflows/deploy.yml`.
-4. Pushing changes to the `main` branch.
-5. Allowing GitHub Actions to generate `config.js` and deploy the application.
-
-Once deployment succeeds, the application becomes accessible through its GitHub Pages URL.
-
-## ✅ Week 6 Submission Checklist
-
-- [x] Understand synchronous and asynchronous JavaScript.
-- [x] Create and use Promises.
-- [x] Understand callback functions and callback hell.
-- [x] Implement Promise chaining.
-- [x] Use Promise.all() and Promise.race().
-- [x] Write async/await functions.
-- [x] Handle errors using try/catch.
-- [x] Work with the Fetch API.
-- [x] Handle loading and error states.
-- [x] Display API data in the DOM.
-- [x] Practice POST requests.
-- [x] Implement search and filtering.
-- [x] Build the Weather Dashboard.
-- [x] Practice localStorage.
-- [x] Complete daily challenges.
-- [x] Configure GitHub Actions deployment.
-
 ## 💡 Challenges and Lessons Learned
 
 During this week, I gained practical experience working with asynchronous JavaScript and external APIs.
